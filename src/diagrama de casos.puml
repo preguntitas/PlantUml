@@ -1,16 +1,14 @@
 @startuml
 ' DEFINICIONES
 :Cliente: as cliente
-:Restaurante: as restaurante
-rectangle {
-(Mostrar menú) as mostrar
-(Pedir comida) as pedir
-}
-(Entregar comida) as entregar
+(Confirmar pedido) as confirmar
+(Cancelar pedido) as cancelar
+(Devolver pedido) as devolver
 
 ' RELACIONES
-cliente -- mostrar
-cliente -- pedir
-restaurante -- mostrar
-restaurante -- entregar
+left to right direction /'Cambiamos la dirección'/
+cliente -- confirmar
+cliente -- cancelar
+confirmar ..> devolver : <<include>>
+cancelar ..> devolver : <<include>>
 @enduml
