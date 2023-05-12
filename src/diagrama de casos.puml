@@ -1,9 +1,10 @@
 @startuml
 ' DEFINICIONES
-usecase Acceder
-usecase Registrarse
+(Pagar) as pagar
+(Pagar con tarjeta) as tarjeta
+(Pagar con efectivo) as efectivo
 
 ' RELACIONES
-left to right direction
-Acceder <.. Registrarse : <<extend>>
+tarjeta --|> pagar
+efectivo --|> pagar
 @enduml
