@@ -1,3 +1,16 @@
 @startuml
-:Cliente: - (Mostrar menú)
+' DEFINICIONES
+:Cliente: as cliente
+:Restaurante: as restaurante
+rectangle {
+(Mostrar menú) as mostrar
+(Pedir comida) as pedir
+}
+(Entregar comida) as entregar
+
+' RELACIONES
+cliente -- mostrar
+cliente -- pedir
+restaurante -- mostrar
+restaurante -- entregar
 @enduml
