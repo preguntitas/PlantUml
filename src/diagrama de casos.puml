@@ -1,14 +1,9 @@
 @startuml
 ' DEFINICIONES
-:Cliente: as cliente
-(Confirmar pedido) as confirmar
-(Cancelar pedido) as cancelar
-(Devolver pedido) as devolver
+usecase Acceder
+usecase Registrarse
 
 ' RELACIONES
-left to right direction /'Cambiamos la dirección'/
-cliente -- confirmar
-cliente -- cancelar
-confirmar ..> devolver : <<include>>
-cancelar ..> devolver : <<include>>
+left to right direction
+Acceder <.. Registrarse : <<extend>>
 @enduml
