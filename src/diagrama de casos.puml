@@ -1,22 +1,15 @@
 @startuml
 ' DEFINICIONES
-:Usuario: as usuario
-:Administrador: as administrador
-(Iniciar sesion) as iniciar
-(Recuperar contraseña) as recuperar
-(Modificar contraseña) as modificar
-(Cerrar sesion) as cerrar
-(Registrar usuario) as registrar
-(Instalar programa) as instalar
+:Ciudadano: as ciudadano
+:Ciudadano extranjero: as extranjero
+(Registrar entrada) as registrar
+(Tomar huellas) as huellas
 
 ' RELACIONES
 left to right direction
-usuario -- iniciar
-usuario -- recuperar
-usuario -- modificar
-usuario -- cerrar
-administrador -- registrar
-administrador -- instalar
-administrador --|> usuario
+ciudadano -- registrar
+extranjero -- huellas
+extranjero --|> ciudadano
+huellas ..> registrar
 
 @enduml
