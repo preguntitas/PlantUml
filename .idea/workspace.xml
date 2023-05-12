@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da6b3ca3-a034-4574-84e8-01441a841082" name="Changes" comment="Diagrama Tienda en Internet">
+    <list default="true" id="da6b3ca3-a034-4574-84e8-01441a841082" name="Changes" comment="Diagrama Puesto fronterizo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/diagrama de casos.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/diagrama de casos.puml" afterDir="false" />
     </list>
@@ -67,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683921213706</updated>
       <workItem from="1683921214703" duration="125000" />
-      <workItem from="1683921356077" duration="2118000" />
+      <workItem from="1683921356077" duration="3841000" />
     </task>
     <task id="LOCAL-00001" summary="Primera versión">
       <created>1683921471023</created>
@@ -146,7 +146,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683923120120</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Diagrama Usuarios y administradores">
+      <created>1683923481926</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683923481926</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Diagrama Puesto fronterizo">
+      <created>1683923709053</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683923709053</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +188,8 @@
     <MESSAGE value="Diagrama generalización con actor" />
     <MESSAGE value="Diagrama Máquina de café" />
     <MESSAGE value="Diagrama Tienda en Internet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Diagrama Tienda en Internet" />
+    <MESSAGE value="Diagrama Usuarios y administradores" />
+    <MESSAGE value="Diagrama Puesto fronterizo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Diagrama Puesto fronterizo" />
   </component>
 </project>

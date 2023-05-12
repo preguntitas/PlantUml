@@ -1,15 +1,19 @@
 @startuml
 ' DEFINICIONES
-:Ciudadano: as ciudadano
-:Ciudadano extranjero: as extranjero
-(Registrar entrada) as registrar
-(Tomar huellas) as huellas
+usecase sacar as "Sacar dinero
+ --
+ + solicitud hecha"
+ usecase "retener tarjeta" as retener
 
 ' RELACIONES
-left to right direction
-ciudadano -- registrar
-extranjero -- huellas
-extranjero --|> ciudadano
-huellas ..> registrar
+ sacar <.. retener: <<Extend>>
+note on link
+ Description
+ --
+ condicion:
+  {historia sospechosa}
+ punto de extensión:
+  solicitud hecha"
+end note
 
 @enduml
