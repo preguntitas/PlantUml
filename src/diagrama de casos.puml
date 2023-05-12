@@ -1,12 +1,17 @@
 @startuml
 ' DEFINICIONES
-actor Cliente as cliente
-actor :Cliente VIP: as vip
-(Reservar vuelo) as vuelo
-(Reservar asientos) as asiento
+:Cliente: as cliente
+(Meter dinero) as dinero
+(Pedir azucar) as azucar
+(Pedir Producto) as producto
+(Cancelar) as cancelar
 
 ' RELACIONES
-cliente -- vuelo
-vip -- asiento
-vip --|> cliente
+left to right direction
+cliente -- dinero
+cliente -- azucar
+cliente -- producto
+cliente -- cancelar
+producto ..> dinero : <<include>>
+cancelar ..> dinero : <<include>>
 @enduml
