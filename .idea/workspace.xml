@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da6b3ca3-a034-4574-84e8-01441a841082" name="Changes" comment="Diagrama generalización con actor">
+    <list default="true" id="da6b3ca3-a034-4574-84e8-01441a841082" name="Changes" comment="Diagrama Tienda en Internet">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/diagrama de casos.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/diagrama de casos.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683921213706</updated>
       <workItem from="1683921214703" duration="125000" />
-      <workItem from="1683921356077" duration="1155000" />
+      <workItem from="1683921356077" duration="2118000" />
     </task>
     <task id="LOCAL-00001" summary="Primera versión">
       <created>1683921471023</created>
@@ -131,7 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683922377040</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Diagrama Máquina de café">
+      <created>1683922626167</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683922626167</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Diagrama Tienda en Internet">
+      <created>1683923120120</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683923120120</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +172,8 @@
     <MESSAGE value="Diagrama inclusión" />
     <MESSAGE value="Diagrama generalización" />
     <MESSAGE value="Diagrama generalización con actor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Diagrama generalización con actor" />
+    <MESSAGE value="Diagrama Máquina de café" />
+    <MESSAGE value="Diagrama Tienda en Internet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Diagrama Tienda en Internet" />
   </component>
 </project>

@@ -1,22 +1,22 @@
 @startuml
 ' DEFINICIONES
-:new Actor: as actor
-(Identificarse) as indentificarse
-(Pagar) as pagar
-(Elegir mensajero) as elegir
-(Confirmar) as confirmar
-(Registrarse) as registrar
-(Pagar con tarjeta) as tarjeta
-(Pagar con transferencia) as transferencia
+:Usuario: as usuario
+:Administrador: as administrador
+(Iniciar sesion) as iniciar
+(Recuperar contraseña) as recuperar
+(Modificar contraseña) as modificar
+(Cerrar sesion) as cerrar
+(Registrar usuario) as registrar
+(Instalar programa) as instalar
 
 ' RELACIONES
 left to right direction
-actor -- indentificarse
-actor -- pagar
-actor -- elegir
-actor -- confirmar
-indentificarse <.. registrar : <<extend>>
-pagar <|-- tarjeta
-pagar <|-- transferencia
+usuario -- iniciar
+usuario -- recuperar
+usuario -- modificar
+usuario -- cerrar
+administrador -- registrar
+administrador -- instalar
+administrador --|> usuario
 
 @enduml
