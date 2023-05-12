@@ -1,10 +1,12 @@
 @startuml
 ' DEFINICIONES
-(Pagar) as pagar
-(Pagar con tarjeta) as tarjeta
-(Pagar con efectivo) as efectivo
+actor Cliente as cliente
+actor :Cliente VIP: as vip
+(Reservar vuelo) as vuelo
+(Reservar asientos) as asiento
 
 ' RELACIONES
-tarjeta --|> pagar
-efectivo --|> pagar
+cliente -- vuelo
+vip -- asiento
+vip --|> cliente
 @enduml
