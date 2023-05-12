@@ -1,17 +1,22 @@
 @startuml
 ' DEFINICIONES
-:Cliente: as cliente
-(Meter dinero) as dinero
-(Pedir azucar) as azucar
-(Pedir Producto) as producto
-(Cancelar) as cancelar
+:new Actor: as actor
+(Identificarse) as indentificarse
+(Pagar) as pagar
+(Elegir mensajero) as elegir
+(Confirmar) as confirmar
+(Registrarse) as registrar
+(Pagar con tarjeta) as tarjeta
+(Pagar con transferencia) as transferencia
 
 ' RELACIONES
 left to right direction
-cliente -- dinero
-cliente -- azucar
-cliente -- producto
-cliente -- cancelar
-producto ..> dinero : <<include>>
-cancelar ..> dinero : <<include>>
+actor -- indentificarse
+actor -- pagar
+actor -- elegir
+actor -- confirmar
+indentificarse <.. registrar : <<extend>>
+pagar <|-- tarjeta
+pagar <|-- transferencia
+
 @enduml
